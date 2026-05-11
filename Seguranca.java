@@ -5,7 +5,7 @@ public class Seguranca {
         Scanner sc = new Scanner(System.in);
         int opcao = 0;
 
-        while(opcao != 6){
+        while(opcao != 7){
             System.out.println("===== Segurança Digital =====");
 
             System.out.println("Digite 1 para ler sobre senhas");
@@ -13,10 +13,12 @@ public class Seguranca {
             System.out.println("Digite 3 para ler sobre navegação e redes");
             System.out.println("Digite 4 para ler sobre privacidade e dados");
             System.out.println("Digite 5 para ler sobre manutenção e recuperação");
-            System.out.println("Digite 6 para sair");
+            System.out.println("Digite 6 para testar seus conhecimentos");
+            System.out.println("Digite 7 para sair");
 
             System.out.println("Escolha uma opção: ");
-            opcao = sc.nextInt();
+            opcao = sc.nextInt(); // estava pulando a pergunta do teste
+            sc.nextLine(); 
 
             switch (opcao){
                 case 1:
@@ -36,6 +38,7 @@ public class Seguranca {
                         "suas contas e você só precisa lembrar de uma senha mestra para\r\n" + 
                         "acessá-las."
                     );
+                    System.out.println("");
                     break;
 
                 case 2:
@@ -56,6 +59,7 @@ public class Seguranca {
                         "entidades como lojas ou bancos e induzem as vítimas a compartilhar suas\r\n" +
                         "informações confidenciais."
                     );
+                    System.out.println("");
                     break;
 
                 case 3:
@@ -69,6 +73,7 @@ public class Seguranca {
                         "usando uma rede pública e quer esconder os dados que você está\r\n" + 
                         "acessando."
                     );
+                    System.out.println("");
                     break;
 
                 case 4:
@@ -81,6 +86,7 @@ public class Seguranca {
                         "seja seu, correção de dados que estejam incorretos ou desatualizados ou até\r\n" + 
                         "revogar o consentimento de gerenciarem seus dados."
                     );
+                    System.out.println("");
                     break;
                 
                 case 5:
@@ -94,9 +100,38 @@ public class Seguranca {
                         "estas atualizações mais novas acabam trazendo soluções para brechas que\r\n" + 
                         "existiam no sistema em versões anteriores."
                     );
+                    System.out.println("");
                     break;
 
                 case 6:
+                    System.out.println("Com base no que você leu escolha a alternativa correta: ");
+                    System.out.println("");
+
+                    System.out.println("(a) ");
+                    System.out.println("(b) ");
+                    System.out.println("(c) Uma rede segura é uma infraestrutura de rede que utiliza medidas para \ngarantir a confiabilidade de seus dados.");
+                    System.out.println("(d) ");
+                    System.out.println("(e) ");
+
+                    System.out.println("");
+                    
+                    System.out.println("Digite sua resposta: ");
+                    String resposta = sc.nextLine();
+                    
+                    if (resposta.equals("c")){ // == não funciona com strings
+                        System.out.println("Resposta correta!");
+
+                        System.out.println("");
+                        break;
+                    }
+                    else{
+                        System.out.println("Resposta incorreta!");
+
+                        System.out.println("");
+                        break;
+                    }
+
+                case 7:
                     System.out.println("saindo...");
                     break;
 
