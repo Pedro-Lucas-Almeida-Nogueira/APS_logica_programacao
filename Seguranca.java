@@ -107,11 +107,11 @@ public class Seguranca {
                     System.out.println("Com base no que você leu escolha a alternativa correta: ");
                     System.out.println("");
 
-                    System.out.println("(a) ");
-                    System.out.println("(b) ");
+                    System.out.println("(a) Senhas com somente letras são mais fortes do que senhas que utilizam \nvários caracteres diferentes.");
+                    System.out.println("(b) O smishing é um golpe que acontece por meio de ligações telefônicas onde \nos golpistas se passam por bancos e etc.");
                     System.out.println("(c) Uma rede segura é uma infraestrutura de rede que utiliza medidas para \ngarantir a confiabilidade de seus dados.");
-                    System.out.println("(d) ");
-                    System.out.println("(e) ");
+                    System.out.println("(d) A LGPD(Lei Geral de Proteção de Dados Pessoais) não permite que alguém \ntenha acesso a seus próprios dados caso estejam sendo gerenciados por outros.");
+                    System.out.println("(e) É uma boa prática de manutenção de dados salvar seus backups somente \nna mesma mídia e na mesma máquina.");
 
                     System.out.println("");
                     
